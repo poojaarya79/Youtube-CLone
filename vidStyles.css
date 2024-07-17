@@ -1,0 +1,87 @@
+
+.vid-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    column-gap: 28px;
+    row-gap: 50px;
+}
+@media (max-width :880px){
+    .vid-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+@media (min-width :881px) and (max-width:1200px){
+    .vid-grid{
+        grid-template-columns:1fr 1fr 1fr;
+    }
+}
+@media (min-width:1201px){
+    .vid-grid{
+        grid-template-columns:1fr 1fr 1fr 1fr;
+    }
+}
+/*
+.preview{
+    width: 300px;
+    display:inline-block;
+    vertical-align:top;
+    margin-right:15px
+}*/
+.vid-info-grid{
+    display:grid;
+    grid-template-columns:50px 1fr;
+}
+.profile-pic{
+    width:40px;
+    border-radius: 40px;
+}
+.vid-info{
+    margin-left:10px;
+}
+.thumbnail-row{
+    margin-bottom: 12px;
+    position:relative;
+}
+.thumbnail{
+    display:block;
+    width:100%;
+    cursor: pointer;
+    /*//following is done if both width and height are to be given and image shape is to be maintained
+    height:600px;
+    object-fit:contain;
+    object-position:top;
+    border-width:2px;
+    border-radius:4px;
+    border-color:blueviolet;
+    border-style:solid;
+    */
+}
+.time-stamp{
+    background-color: black;
+    color: white;
+    position:absolute;
+    bottom:9px;
+    right:6px;
+    font-family:roboto,arial;
+    font-weight:500;
+    font-size:12px;
+    padding:4px;
+    border-radius:2px;
+}
+.vid-title{
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height:20px;
+}
+.vid-author{
+    color:rgb(96, 96, 96);
+    font-size:12px;
+    margin-bottom:0;
+}
+.vid-stats{
+    color:rgb(96, 96, 96);
+    font-size: 12px;
+    margin-top:0;
+}
